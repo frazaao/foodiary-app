@@ -66,7 +66,12 @@ export const MealsList = () => {
       keyExtractor={(meal) => meal.id}
       renderItem={({ item: meal }) => (
         <View className="mx-5">
-          <MealCard icon={meal.icon} name={meal.name} foods={meal.subtitle} />
+          <MealCard
+            id={meal.id}
+            icon={meal.icon}
+            name={meal.name}
+            foods={meal.subtitle}
+          />
         </View>
       )}
     />
